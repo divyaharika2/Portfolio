@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(255, 255, 255);
+}
+.nav-bar{
+display: flex;
+align-items: center;
+height: 100px;
+padding: 0px 100px;
+padding-top: 50px;
+}
+.logo{
+    width: 100%;
+    padding-left: 5%;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(210, 7, 7);
+}
+.menu-bar{
+    width: 70%;
+    padding-right: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-bar li a{
+    font-size: 20px;
+    font-weight: 550;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.menu-bar li a:hover{
+    color:rgb(210, 7, 7) ;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-underline-position:auto;
+    text-decoration-color:rgb(181, 2, 2)  ;
+}
+.nav-bar-menu{
+    display: none;
+}
+.section2,.section3,.section4,.section6{
+    position: relative;
+}
+.arrows{
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.arrows img{
+    width: 20px;
+}
+
+@media(max-width:1024px){
+.nav-bar{
+    display: none ;
+}
+.nav-bar-menu{
+    display: flex;
+}
+.hamburger {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: fixed;
+    right: 20px;
+    top: 15px;
+}
+.hamburger i{
+    font-size: 35px;
+    padding: 3px;
+    border-radius: 22px;
+}
+.nav-bar-menu .logo{
+    padding-left: 20px;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+.nav-bar-menu .menu-bar{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    align-content: space-around;
+    right: 0;
+    top: 70px;
+    padding: 10px;
+    gap: 10px;
+    margin-right:-700px ;
+    border-radius: 20px;
+    width: 138px;
+    transition: all 0.6s ease;
+
+}
+.nav-bar-menu .menu-bar.show{
+    margin-right: 0px;
+}
+.nav-bar-menu .menu-bar li a{
+    background-color: rgb(243, 166, 166);
+    display: block;
+    border-radius: 5px;
+    font-weight: 600;
+    color: rgb(173, 20, 20);
+    padding: 5px;
+}
+}
+@media(max-width:767px){
+    .logo{
+        text-wrap: nowrap;
+    }.nav-bar .logo{
+        margin-top: 10px;
+    }
+}
