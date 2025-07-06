@@ -22,7 +22,7 @@ padding-top: 50px;
     width: 100%;
     padding-left: 5%;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 700;
     color: rgb(210, 7, 7);
 }
 .menu-bar{
@@ -68,6 +68,13 @@ padding-top: 50px;
 }
 .nav-bar-menu{
     display: flex;
+}
+.menu-bar{
+    width: 300px;
+    padding-right: 0px;
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
 }
 .hamburger {
     background-color: rgb(255, 255, 255);
