@@ -2,8 +2,9 @@
 display: flex;
 flex-direction: column;
 text-align: justify;
-gap:50px;
-padding: 150px;
+gap: 80px;
+padding: 15px;
+margin-top: 0px;
 }
 .section41{   
 display: flex;
@@ -24,6 +25,7 @@ justify-content: center;
     align-items: center;
     justify-content: center;
     gap: 50px;
+    margin-bottom: 100px;
 }
 .section42-box1{
     border: 2px solid black;
@@ -33,7 +35,7 @@ justify-content: center;
     justify-content: center;
     border-radius: 20px;
     gap: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .section42-box1 img{
     width: 350px;
